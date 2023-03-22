@@ -14,7 +14,7 @@ print("Connected to Zabbix API Version %s" % zapi.api_version())
 
 
 # Define host parameters
-host_name = "Test Host"
+host_name = "Test Host 2"
 visible_name = "Zabbix Automation test"
 host_group_id = 46 # ID of the host group the host will belong to
 template_id = 11071 # IDs of the templates the host will use
