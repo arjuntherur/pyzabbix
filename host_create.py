@@ -6,7 +6,7 @@ import json
 #define username and password
 
 username = os.environ['ZABBIX_USERNAME']
-password = os.environ['ZABBIX_PASSWORD'
+password = os.environ['ZABBIX_PASSWORD']
 
 zapi = ZabbixAPI("https://zabbix.tsworkz.com/zabbix")
 zapi.login(username,password)
