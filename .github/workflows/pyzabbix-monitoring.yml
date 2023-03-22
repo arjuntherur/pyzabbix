@@ -9,7 +9,7 @@ on:
          required: true
        macro_url:
          description: 'Url of the Site'
-         default: ''
+         default: 'https://blog-test.dev-tsworks.io/'
          required: true
        tag_hostname:
          description: 'Tag-Host'
@@ -29,7 +29,7 @@ jobs:
        host_name: ${{ github.event.inputs.hostname }}
        tag_hostname: ${{ github.event.inputs.tag_hostname }}
        tag_client_name: ${{ github.event.inputs.tag_client }}
-       marco_url: ${{ github.event.inputs.macro_url}}
+       marco_url: ${{ github.event.inputs.macro_url }}
 
     steps:
       - name: Checkout code
