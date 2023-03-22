@@ -1,21 +1,6 @@
 name: PyZabbix Monitoring
 
-on:
-   repository_dispatch: 
-     client_payload:
-       hostname:
-         description: 'Name of the host'
-         default: 'Test Host'
-         required: true
-       tag_hostname:
-         description: 'tag 1'
-         default: 'Ghost'
-         required: true
-       tag_client:
-         description: 'tag 2'
-         default: 'Arackal'
-         required: true
-         
+on:     
    workflow_dispatch:
      inputs:
        hostname:
