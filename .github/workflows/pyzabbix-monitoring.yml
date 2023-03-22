@@ -22,4 +22,4 @@ jobs:
         run: pip install pyzabbix
 
       - name: Run Python script
-        run: host_create.py
+        run: python host_create.py
