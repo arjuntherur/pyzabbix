@@ -15,12 +15,12 @@ print("Connected to Zabbix API Version %s" % zapi.api_version())
 
 # Define host parameters
 
-host_name = os.environ['host_name']
+host_name = os.environ.get('host_name')
 visible_name = "Zabbix Automation test"
 host_group_id = 46 # ID of the host group the host will belong to
 template_id = 11071 # IDs of the templates the host will use
-tag_hostname = os.environ['tag_hostname']
-tag_client_name = os.environ['tag_client_name']
+tag_hostname = os.environ.get('tag_hostname')
+tag_client_name = os.environ.get('tag_client_name')
 marco_url = "https://blog-test.dev-tsworks.io"
 macro_description = "blog test"
 
