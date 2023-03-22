@@ -2,7 +2,7 @@ from pyzabbix import ZabbixAPI,ZabbixAPIException, ZabbixAPIObject
 import requests
 
 zapi = ZabbixAPI("https://zabbix.tsworkz.com/zabbix")
-zapi.login("tswadmin", "MyHeart@2023")
+zapi.login(${secrets.ZABBIX_USERNAME}, ${secrets.ZABBIX_PASSWORD})
 print("Connected to Zabbix API Version %s" % zapi.api_version())
 
 
