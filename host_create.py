@@ -1,10 +1,12 @@
 from pyzabbix import ZabbixAPI,ZabbixAPIException, ZabbixAPIObject
 import requests
+import os
+import json
 
 #define username and password
 
-username = ${{secrets.ZABBIX_USERNAME}}
-password = ${{secrets.ZABBIX_PASSWORD}}
+username = os.environ['ZABBIX_USERNAME']
+password = os.environ['ZABBIX_PASSWORD'
 
 zapi = ZabbixAPI("https://zabbix.tsworkz.com/zabbix")
 zapi.login(username,password)
