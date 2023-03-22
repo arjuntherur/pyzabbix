@@ -51,7 +51,7 @@ new_host = zapi.host.create(
         },
         {
             "macro": "{$URL}",
-            "value": marco_url,
+            "value": marco_url
         }
     ]
 )
