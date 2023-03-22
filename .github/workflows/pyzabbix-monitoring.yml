@@ -37,9 +37,9 @@ jobs:
     env:
        ZABBIX_USERNAME: ${{ secrets.ZABBIX_USERNAME}}
        ZABBIX_PASSWORD: ${{ secrets.ZABBIX_PASSWORD }}
-       host_name: ${{ github.event.client_payload.hostname }}
-       tag_hostname: ${{ github.event.client_payload.tag_hostname }}
-       tag_client_name: ${{ github.event.client_payload.tag_client }}
+       host_name: ${{ github.event.inputs.hostname }}
+       tag_hostname: ${{ github.event.inputs.tag_hostname }}
+       tag_client_name: ${{ github.event.inputs.tag_client }}
 
     steps:
       - name: Checkout code
