@@ -24,7 +24,6 @@ marco_url = "https://blog-test.dev-tsworks.io"
 # Create host
 new_host = zapi.host.create(
     host=host_name,
-    name=visible_name,
     groups=[
         {
             "groupid": host_group_id
