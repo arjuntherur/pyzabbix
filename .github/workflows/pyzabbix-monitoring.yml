@@ -8,6 +8,9 @@ on:
 jobs:
   run_script:
     runs-on: ubuntu-latest
+    env:
+       ZABBIX_USERNAME: ${{ secrets.ZABBIX_USERNAME}}
+       ZABBIX_PASSWORD: ${{ secrets.ZABBIX_PASSWORD }}
 
     steps:
       - name: Checkout code
