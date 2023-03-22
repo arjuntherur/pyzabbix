@@ -1,8 +1,13 @@
 from pyzabbix import ZabbixAPI,ZabbixAPIException, ZabbixAPIObject
 import requests
 
+#define username and password
+
+username = ${{secrets.ZABBIX_USERNAME}}
+password = ${{secrets.ZABBIX_PASSWORD}}
+
 zapi = ZabbixAPI("https://zabbix.tsworkz.com/zabbix")
-zapi.login(${secrets.ZABBIX_USERNAME}, ${secrets.ZABBIX_PASSWORD})
+zapi.login(username,password)
 print("Connected to Zabbix API Version %s" % zapi.api_version())
 
 
