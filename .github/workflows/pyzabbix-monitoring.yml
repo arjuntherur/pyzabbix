@@ -15,6 +15,21 @@ on:
          description: 'tag 2'
          default: 'Arackal'
          required: true
+         
+   workflow_dispatch:
+     inputs:
+       hostname:
+         description: 'Name of the host'
+         default: 'Test Host'
+         required: true
+       tag_hostname:
+         description: 'tag 1'
+         default: 'Ghost'
+         required: true
+       tag_client:
+         description: 'tag 2'
+         default: 'Arackal'
+         required: true
 
 jobs:
   run_script:
