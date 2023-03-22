@@ -9,15 +9,15 @@ on:
          required: true
        macro_url:
          description: 'Url of the Site'
-         default: 'https://blog-test.dev-tsworks.io'
+         default: ''
          required: true
        tag_hostname:
-         description: 'tag 1'
-         default: 'Ghost'
+         description: 'Tag-Host'
+         default: ''
          required: true
        tag_client:
-         description: 'tag 2'
-         default: 'Arackal'
+         description: 'Tag-Client'
+         default: ''
          required: true
 
 jobs:
