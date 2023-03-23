@@ -19,6 +19,10 @@ on:
          description: 'Tag-Client'
          default: ''
          required: true
+       tag_type:
+         description: 'Tag-Type'
+         default: ''
+         required: true
 
 jobs:
   run_script:
