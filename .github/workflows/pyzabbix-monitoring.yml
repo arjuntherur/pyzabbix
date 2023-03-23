@@ -11,8 +11,8 @@ on:
          description: 'Url of the Site'
          default: 'https://blog-test.dev-tsworks.io/'
          required: true
-       tag_hostname:
-         description: 'Tag-Host'
+       tag_businessunit:
+         description: 'Tag-Business Unit'
          default: ''
          required: true
        tag_client:
@@ -27,8 +27,9 @@ jobs:
        ZABBIX_USERNAME: ${{ secrets.ZABBIX_USERNAME}}
        ZABBIX_PASSWORD: ${{ secrets.ZABBIX_PASSWORD }}
        host_name: ${{ github.event.inputs.hostname }}
-       tag_hostname: ${{ github.event.inputs.tag_hostname }}
+       tag_hostname: ${{ github.event.inputs.tag_businessunit }}
        tag_client_name: ${{ github.event.inputs.tag_client }}
+       tag_type: ${{ github.event.inputs.tag_type}}
        url: ${{ github.event.inputs.url }}
 
     steps:
